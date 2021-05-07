@@ -26,6 +26,19 @@ namespace BakeryTests
       Assert.AreEqual(1, pastry.QuantityOrdered);
     }
 
+    [TestMethod]
+    public void calculateTotal_OnePastryTotal_TotalCost()
+    {
+      //Arrange
+      Pastry pastry = new Pastry();
+      pastry.PriceEach = 5;
+      pastry.AddPastries(1);
+      //Act
+      pastry.CalculateTotal();
+      //Assert
+      Assert.AreEqual(5, pastry.TotalCost);
+    }
+
 
     
   }
