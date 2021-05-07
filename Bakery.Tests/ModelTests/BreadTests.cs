@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BreadModels;
+using BakeryModels;
 
 namespace BreadTests
 {
   [TestClass]
-  public class BreadTests
+  public class BreadTest
   {
 
     [TestMethod]
@@ -12,6 +12,18 @@ namespace BreadTests
     {
       Bread loaf = new Bread();
       Assert.AreEqual(typeof(Bread), loaf.GetType());
+    }
+
+    [TestMethod]
+    public void AddLoafs_AddOneLoaf_QuantityOrdered()
+    {
+      //Arrange
+      Bread bread = new Bread();
+
+      //Act
+      bread.AddLoafs(1);
+      //Assert
+      Assert.AreEqual(1, bread.QuantityOrdered);
     }
 
   }
