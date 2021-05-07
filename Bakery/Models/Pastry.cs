@@ -15,8 +15,11 @@ namespace BakeryModels
       QuantityOrdered += qty;
     }
 
-    // public void CalculateTotal()
-    // {
-    // }
+    public void CalculateTotal()
+    {
+      int singles = QuantityOrdered % 3;
+      int setsOfThree = (QuantityOrdered - singles)/3;
+      TotalCost = (singles * PriceEach) + (setsOfThree * ((PriceEach * 2)+(PriceEach/2)));
+    }
   }
 }

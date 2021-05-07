@@ -18,9 +18,7 @@ namespace BakeryModels
     public void CalculateTotal()
     {
       int singles = QuantityOrdered % 3;
-      Console.WriteLine("singles: "+singles);
       int setsOfThree = (QuantityOrdered - singles)/3;
-      Console.WriteLine("setsOfThree: "+setsOfThree);
       TotalCost = (singles * PriceEach) + (setsOfThree * PriceEach * 2);
     }
   }

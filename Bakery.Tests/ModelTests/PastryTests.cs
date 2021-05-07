@@ -31,12 +31,12 @@ namespace BakeryTests
     {
       //Arrange
       Pastry pastry = new Pastry();
-      pastry.PriceEach = 5;
+      pastry.PriceEach = 2;
       pastry.AddPastries(1);
       //Act
       pastry.CalculateTotal();
       //Assert
-      Assert.AreEqual(5, pastry.TotalCost);
+      Assert.AreEqual(2, pastry.TotalCost);
     }
 
 
