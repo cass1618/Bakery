@@ -23,6 +23,5 @@ namespace BakeryModels
       Console.WriteLine("setsOfThree: "+setsOfThree);
       TotalCost = (singles * PriceEach) + (setsOfThree * PriceEach * 2);
     }
-
   }
 }
