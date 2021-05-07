@@ -27,12 +27,14 @@ namespace BreadTests
     }
 
     [TestMethod]
-    public void calcualteTotal_OneLoafTotal_TotalCost()
+    public void calculateTotal_OneLoafTotal_TotalCost()
     {
       //Arrange
       Bread bread = new Bread();
+      bread.PriceEach = 5;
+      bread.AddLoaves(1);
       //Act
-      bread.calculateTotal();
+      bread.CalculateTotal();
       //Assert
       Assert.AreEqual(5, bread.TotalCost);
     }
