@@ -14,6 +14,19 @@ namespace BakeryTests
       Assert.AreEqual(typeof(Pastry), pastry.GetType());
     }
 
+  [TestMethod]
+    public void AddPastries_AddOnePastry_QuantityOrdered()
+    {
+      //Arrange
+      Pastry pastry = new Pastry();
+
+      //Act
+      pastry.AddPastries(1);
+      //Assert
+      Assert.AreEqual(1, pastry.QuantityOrdered);
+    }
+
+
     
   }
 }
