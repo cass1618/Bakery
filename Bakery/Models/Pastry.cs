@@ -10,10 +10,10 @@ namespace BakeryModels
 
     public int TotalCost { get; set; }
 
-    // public void AddPastries(int qty)
-    // {
-    //   QuantityOrdered += qty;
-    // }
+    public void AddPastries(int qty)
+    {
+      QuantityOrdered += qty;
+    }
 
     // public void CalculateTotal()
     // {
