@@ -6,7 +6,10 @@ namespace BakeryModels
 
     public int Price { get; set; }
 
-    
+    public void AddLoafs(int qty)
+    {
+      QuantityOrdered += qty;
+    }
 
   }
 }
