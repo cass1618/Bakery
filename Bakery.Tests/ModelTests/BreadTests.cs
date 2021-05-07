@@ -39,5 +39,31 @@ namespace BreadTests
       Assert.AreEqual(5, bread.TotalCost);
     }
 
+    [TestMethod]
+    public void calculateTotal_TwoLoavesTotal_TotalCost()
+    {
+      //Arrange
+      Bread bread = new Bread();
+      bread.PriceEach = 5;
+      bread.AddLoaves(2);
+      //Act
+      bread.CalculateTotal();
+      //Assert
+      Assert.AreEqual(10, bread.TotalCost);
+    }
+
+    [TestMethod]
+    public void calculateTotal_ThreeLoavesTotal_TotalCost()
+    {
+      //Arrange
+      Bread bread = new Bread();
+      bread.PriceEach = 5;
+      bread.AddLoaves(3);
+      //Act
+      bread.CalculateTotal();
+      //Assert
+      Assert.AreEqual(10, bread.TotalCost);
+    }
+
   }
 }
