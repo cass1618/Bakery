@@ -15,15 +15,26 @@ namespace BreadTests
     }
 
     [TestMethod]
-    public void AddLoafs_AddOneLoaf_QuantityOrdered()
+    public void AddLoaves_AddOneLoaf_QuantityOrdered()
     {
       //Arrange
       Bread bread = new Bread();
 
       //Act
-      bread.AddLoafs(1);
+      bread.AddLoaves(1);
       //Assert
       Assert.AreEqual(1, bread.QuantityOrdered);
+    }
+
+    [TestMethod]
+    public void calcualteTotal_OneLoafTotal_TotalCost()
+    {
+      //Arrange
+      Bread bread = new Bread();
+      //Act
+      bread.calculateTotal();
+      //Assert
+      Assert.AreEqual(5, bread.TotalCost);
     }
 
   }

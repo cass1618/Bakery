@@ -4,9 +4,11 @@ namespace BakeryModels
   {
     public int QuantityOrdered { get; set; }
 
-    public int Price { get; set; }
+    public int PriceEach { get; set; }
 
-    public void AddLoafs(int qty)
+    public int TotalCost { get; set; }
+
+    public void AddLoaves(int qty)
     {
       QuantityOrdered += qty;
     }

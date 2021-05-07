@@ -18,3 +18,29 @@ price
 total price
 
 method: add loaf
+
+calculate price: multiply quantity ordered by 
+
+1 5
+2 10
+3 10
+4 15
+5 20
+6 20
+7 25
+8 30
+9 30
+
+8 % 3 = 2 => 10
+6 / 3 = 2 => 20
+
+9 % 3 = 0
+9 / 3 = 3 => 30
+
+7 % 3 = 1 => 5
+6 / 3 = 2 => 20
+
+Q % 3 = R
+(Q-R)/3 = 3-packs
+
+
