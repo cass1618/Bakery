@@ -1,5 +1,3 @@
-using System;
-
 namespace BakeryModels
 {
   public class Pastry
@@ -13,6 +11,7 @@ namespace BakeryModels
     public void AddPastries(int qty)
     {
       QuantityOrdered += qty;
+      CalculateTotal();
     }
 
     public void CalculateTotal()
