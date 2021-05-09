@@ -1,52 +1,41 @@
-There should be two classes: one for Bread and one for Pastry.
+# Pierre's Bakery
 
-When the user runs the application, they should receive a prompt with a welcome message along with the cost for both Bread and Pastry.
+By Cassandra Copp
 
-A user should be able to specify how many loaves of Bread and how many Pastrys they'd like.
+## Description
 
-The application will return the total cost of the order.
+This console app displays prices for bread and pastries and then prompts the user to enter how many they would like to purchase.  It then calculates and displays the total price.
 
-Pierre offers the following deals:
+## Technologies Used
 
-Bread: Buy 2, get 1 free. A single loaf costs $5.
-Pastry: Buy 1 for \$2 or 3 for $5.
-All functionality for the models should be tested.
+* C#
+* .NET 5
+* MS Test
 
-Bread class
-quantity ordered
-price
-total price
-
-method: add loaf
-
-calculate price: multiply quantity ordered by 
-
-1 5
-2 10
-3 10
-4 15
-5 20
-6 20
-7 25
-8 30
-9 30
-
-8 % 3 = 2 => 10
-6 / 3 = 2 => 20
-
-9 % 3 = 0
-9 / 3 = 3 => 30
-
-7 % 3 = 1 => 5
-6 / 3 = 2 => 20
-
-Q % 3 = R
-(Q-R)/3 = 3-packs
+### Installation
+1. If you do not already have .NET 5 installed download it [here](https://dotnet.microsoft.com/download/dotnet/5.0)
+1. Clone the [Bakery repository](https://github.com/cass1618/Bakery) 
+1. To run the app in terminal, navigate to Bakery.Solution/Bakery directory
+1. Enter the command
+```cs
+$ dotnet run
+```
+5. If you would like to run the included tests, enter the command
+```cs
+$ dotnet test
+```
 
 
-1 2
-2 4
-3 5
-4 7
-5 9
-6 10
+## Known bugs
+
+This application has no known bugs.
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copywrite (c) Cassandra Copp 2021.
+
+## Contact Information
+
+[github.com/cass1618](http://github.com/cass1618)
